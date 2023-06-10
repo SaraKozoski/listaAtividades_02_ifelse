@@ -1,0 +1,74 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. 
+    O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+    - par ou ímpar;
+    - positivo ou negativo;
+    - inteiro ou decimal.
+    */
+
+    //ENTRADA
+    const numero1 = Number(prompt(`Insira um número: `))
+    const numero2 = Number(prompt(`Insira outro número:`))
+    const operacao = prompt(`Insira a operação que você deseja utilizar: (soma, subtração, divisão e multiplicação):`)
+    let mensagemFinal = ``
+    //PROCESSAMENTO
+    if (numero1 > numero2) {
+        if (operacao == `soma`) {
+            resultadoSoma = numero1 + numero2
+            mensagemFinal = mensagemFinal + `A soma do primeiro número com o segundo número é ${resultadoSoma} e é um número`
+            if (resultadoSoma >= 0) {
+                mensagemFinal = mensagemFinal + `positivo e que é `
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo e que é `
+            }
+            if( resultadoSoma % 2 === 0){
+                mensagemFinal = mensagemFinal + `par `
+            }
+            else {
+                mensagemFinal = mensagemFinal + `impar `
+            }
+            if (resultadoSoma % 1 === 0 ){
+
+            }
+
+        }
+        else if (operacao == `subtração`) {
+            resultadoSubtracao = numero1 - numero2
+            mensagemFinal = mensagemFinal + `A subtração do primeiro com o segundo número é ${resultadoSubtracao} e é um número`
+            if (resultadoSoma >= 0) {
+                mensagemFinal = mensagemFinal + `positivoe que é  `
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo e que é `
+            }
+        }
+
+        else if (operacao == `divisão`) {
+            resultadoDivisao = numero1 / numero2
+            mensagemFinal = mensagemFinal + `A divisão do primeiro número com o segundo número é ${resultadoDivisao} e é um número`
+            if (resultadoSoma >= 0) {
+                mensagemFinal = mensagemFinal + `positivo e que é `
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo e que é `
+            }
+        }
+        else if (operacao == `multiplicação`) {
+            resultadoMultiplicacao = numero1 * numero2
+            mensagemFinal = mensagemFinal + `A multiplicação do primeiro número com o segundo número é ${resultadoMultiplicacao} e é um número `
+            if (resultadoSoma >= 0) {
+                mensagemFinal = mensagemFinal + `positivo e que é `
+            }
+            else {
+                mensagemFinal = mensagemFinal + `negativo e que é `
+            }
+        }
+
+    }
+    //SAÍDA
+
+
+</script>
